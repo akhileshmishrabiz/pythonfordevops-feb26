@@ -1,1 +1,91 @@
-{'meta-data': {'ami-id': 'ami-08df646e18b182346', 'ami-launch-index': 0, 'ami-manifest-path': '(unknown)', 'block-device-mapping': {'ami': '/dev/xvda', 'root': '/dev/xvda'}, 'events': {'maintenance': {'history': [], 'scheduled': []}}, 'hostname': 'ip-172-31-9-17.ap-south-1.compute.internal', 'identity-credentials': {'ec2': {'info': {'Code': 'Success', 'LastUpdated': '2022-06-26T13:20:30Z', 'AccountId': '594814570036'}, 'security-credentials': {'ec2-instance': {'Code': 'Success', 'LastUpdated': '2022-06-26T13:19:52Z', 'Type': 'AWS-HMAC', 'AccessKeyId': '###Hidden for security#####', 'SecretAccessKey': '###Hidden for security#####', 'Token': '###Hidden for security#####=', 'Expiration': '2022-06-26T19:33:22Z'}}}}, 'instance-action': 'none', 'instance-id': 'i-0dc550f7cf2cdfdd9', 'instance-life-cycle': 'on-demand', 'instance-type': 't2.micro', 'local-hostname': 'ip-172-31-9-17.ap-south-1.compute.internal', 'local-ipv4': '172.31.9.17', 'mac': '0a:83:e4:b1:7f:a0', 'metrics': {'vhostmd': '<?xml version="1.0" encoding="UTF-8"?>'}, 'network': {'interfaces': {'macs': {'0a:83:e4:b1:7f:a0': {'device-number': 0, 'interface-id': 'eni-061bc82668fade57e', 'ipv4-associations': {'13.127.132.228': '172.31.9.17'}, 'local-hostname': 'ip-172-31-9-17.ap-south-1.compute.internal', 'local-ipv4s': '172.31.9.17', 'mac': '0a:83:e4:b1:7f:a0', 'owner-id': 594814570036, 'public-hostname': 'ec2-13-127-132-228.ap-south-1.compute.amazonaws.com', 'public-ipv4s': '13.127.132.228', 'security-group-ids': 'sg-0a8829c551c192f0b', 'security-groups': 'launch-wizard-2', 'subnet-id': 'subnet-014010713babd424f', 'subnet-ipv4-cidr-block': '172.31.0.0/20', 'vpc-id': 'vpc-000aabde662dd07a1', 'vpc-ipv4-cidr-block': '172.31.0.0/16', 'vpc-ipv4-cidr-blocks': '172.31.0.0/16'}}}}, 'placement': {'availability-zone': 'ap-south-1b', 'availability-zone-id': 'aps1-az3', 'region': 'ap-south-1'}, 'profile': 'default-hvm', 'public-hostname': 'ec2-13-127-132-228.ap-south-1.compute.amazonaws.com', 'public-ipv4': '13.127.132.228', 'public-keys': {'0=terraform-access-key': '<?xml version="1.0" encoding="iso-8859-1"?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n\t"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n'}, 'reservation-id': 'r-00010ecbd48241238', 'security-groups': 'launch-wizard-2', 'services': {'domain': 'amazonaws.com', 'partition': 'aws'}}}
+{
+  "meta-data": {
+    "ami-id": "ami-08df646e18b182346",
+    "ami-launch-index": 0,
+    "ami-manifest-path": "(unknown)",
+    "block-device-mapping": {
+      "ami": "/dev/xvda",
+      "root": "/dev/xvda"
+    },
+    "events": {
+      "maintenance": {
+        "history": [],
+        "scheduled": []
+      }
+    },
+    "hostname": "ip-172-31-9-17.ap-south-1.compute.internal",
+    "identity-credentials": {
+      "ec2": {
+        "info": {
+          "Code": "Success",
+          "LastUpdated": "2022-06-26T13:20:30Z",
+          "AccountId": "594814570036"
+        },
+        "security-credentials": {
+          "ec2-instance": {
+            "Code": "Success",
+            "LastUpdated": "2022-06-26T13:19:52Z",
+            "Type": "AWS-HMAC",
+            "AccessKeyId": "###Hidden for security#####",
+            "SecretAccessKey": "###Hidden for security#####",
+            "Token": "###Hidden for security#####=",
+            "Expiration": "2022-06-26T19:33:22Z"
+          }
+        }
+      }
+    },
+    "instance-action": "none",
+    "instance-id": "i-0dc550f7cf2cdfdd9",
+    "instance-life-cycle": "on-demand",
+    "instance-type": "t2.micro",
+    "local-hostname": "ip-172-31-9-17.ap-south-1.compute.internal",
+    "local-ipv4": "172.31.9.17",
+    "mac": "0a:83:e4:b1:7f:a0",
+    "metrics": {
+      "vhostmd": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    },
+    "network": {
+      "interfaces": {
+        "macs": {
+          "0a:83:e4:b1:7f:a0": {
+            "device-number": 0,
+            "interface-id": "eni-061bc82668fade57e",
+            "ipv4-associations": {
+              "13.127.132.228": "172.31.9.17"
+            },
+            "local-hostname": "ip-172-31-9-17.ap-south-1.compute.internal",
+            "local-ipv4s": "172.31.9.17",
+            "mac": "0a:83:e4:b1:7f:a0",
+            "owner-id": 594814570036,
+            "public-hostname": "ec2-13-127-132-228.ap-south-1.compute.amazonaws.com",
+            "public-ipv4s": "13.127.132.228",
+            "security-group-ids": "sg-0a8829c551c192f0b",
+            "security-groups": "launch-wizard-2",
+            "subnet-id": "subnet-014010713babd424f",
+            "subnet-ipv4-cidr-block": "172.31.0.0/20",
+            "vpc-id": "vpc-000aabde662dd07a1",
+            "vpc-ipv4-cidr-block": "172.31.0.0/16",
+            "vpc-ipv4-cidr-blocks": "172.31.0.0/16"
+          }
+        }
+      }
+    },
+    "placement": {
+      "availability-zone": "ap-south-1b",
+      "availability-zone-id": "aps1-az3",
+      "region": "ap-south-1"
+    },
+    "profile": "default-hvm",
+    "public-hostname": "ec2-13-127-132-228.ap-south-1.compute.amazonaws.com",
+    "public-ipv4": "13.127.132.228",
+    "public-keys": {
+      "0=terraform-access-key": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n <head>\n  <title>404 - Not Found</title>\n </head>\n <body>\n  <h1>404 - Not Found</h1>\n </body>\n</html>\n"
+    },
+    "reservation-id": "r-00010ecbd48241238",
+    "security-groups": "launch-wizard-2",
+    "services": {
+      "domain": "amazonaws.com",
+      "partition": "aws"
+    }
+  }
+}
