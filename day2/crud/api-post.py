@@ -39,6 +39,7 @@ def delete_github_repo(pat, repo_name):
     response = requests.delete(url, headers=headers)
     return response.status_code
 
+
 # Example usage
 if __name__ == "__main__":
     # Create the repo
@@ -49,4 +50,3 @@ if __name__ == "__main__":
 
     response = delete_github_repo(PAT, repo_to_create_for_demo)
     print(response)
-

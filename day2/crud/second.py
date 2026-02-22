@@ -1,6 +1,5 @@
 import requests
 
-
 # https://x.com/search?q=claude&src=typed_query
 
 per_page = 5
@@ -8,7 +7,9 @@ page = 2
 
 github_user = "akhileshmishrabiz"
 
-url = f"https://api.github.com/users/{github_user}/repos?per_page={per_page}&page={page}"
+url = (
+    f"https://api.github.com/users/{github_user}/repos?per_page={per_page}&page={page}"
+)
 
 response = requests.get(url).json()
 # print(response)

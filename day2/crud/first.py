@@ -1,7 +1,3 @@
-
-
-
-
 # a= "myname"
 # b= "Akhilesh mishra"
 
@@ -11,7 +7,7 @@
 
 # print( " Myname is  _>>> Akhilesh mihsra")
 
-# api call to github to pull all repossitiries. 
+# api call to github to pull all repossitiries.
 
 import requests
 

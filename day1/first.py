@@ -1,4 +1,4 @@
-data= """
+data = """
 {
     "project": "DevOps Pipeline",
     "team": "Infrastructure Engineering",
@@ -20,13 +20,12 @@ import json
 json_data = json.loads(data)
 # print(type(json_data))
 
-# print(json_data.items()) 
+# print(json_data.items())
 # this will convert dict to list of tuples
 
 # for key, value in json_data.items():
 #     print("-----------------------------")
 #     print(f"{key} {value}")
-
 
 
 # Give me the monitoring tools used in the project
@@ -39,11 +38,15 @@ keyword = "monitoring_tool"
 
 # print(output)
 
+
 def nice():
     print("Nice!")
 
+
 def not_nice():
     print("Not nice!")
+
+
 # if keyword exist, then say nice, else say not nice
 
 # if keyword in json_data:
@@ -52,5 +55,5 @@ def not_nice():
 
 if json_data.get(keyword, None):
     nice()
-else:    
+else:
     not_nice()

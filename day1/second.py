@@ -82,7 +82,9 @@ aws_data = """
 def get_rds_instances_in_region(data_string, region):
     data = json.loads(data_string)
 
-    rds_replicas = data["regions"]["us-east-1"]["databases"]["rds"]["primary"]["replicas"]
+    rds_replicas = data["regions"]["us-east-1"]["databases"]["rds"]["primary"][
+        "replicas"
+    ]
     rds_data_i_want = []
     for item in rds_replicas:
         if item["region"] == region:
@@ -92,6 +94,7 @@ def get_rds_instances_in_region(data_string, region):
 
 # print(get_rds_instances_in_region(aws_data, "eu-west-2"))
 
+
 # create a functio to stop rds at a certain region, and stop them
 def stop_rds_instaces(rds_instances):
     for instance in rds_instances:
@@ -99,6 +102,6 @@ def stop_rds_instaces(rds_instances):
         print(f"Stopping RDS instance: {instance}")
 
     return True
-    
+
 
 stop_rds_instaces(get_rds_instances_in_region(aws_data, "eu-west-1"))

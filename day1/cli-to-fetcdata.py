@@ -40,7 +40,6 @@ def get_account_id(data_dict):
         return item.get("owner-id")
 
 
-
 # take args from user to get the keyword to search for in the dict
 # python3 cli-to-fetcdata.py  ami-id
 parser = argparse.ArgumentParser(
