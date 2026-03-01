@@ -12,6 +12,7 @@ Queue_url = 'https://sqs.ap-south-1.amazonaws.com/879381241087/clamav-notify'
 # landing_bucket = 'landing-bucket-879381241087'
 clean_bucket = 'clean-bucket-879381241087'
 locals_path = '/Users/akhilesh/projects/pythonfordevops-feb26/day4'
+# locals_path = os.getenv('LOCAL_PATH', '/app/downloads')
 
 from_email = 'livingdevops@gmail.com'
 to_email = ['abubaker.dev417@gmail.com', 'shivamshekhar960@gmail.com', 'aditiyamishranit@gmail.com']
