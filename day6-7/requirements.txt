@@ -1,0 +1,9 @@
+psycopg2-binary
+tqdm
+boto3
+
+
+rds = boto3.client('rds')
+
+
+def 

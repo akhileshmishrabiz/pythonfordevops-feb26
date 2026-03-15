@@ -3,11 +3,6 @@ import boto3
 # from helper import *
 import helper
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
 
 # clean-bucket-879381241087 /tmp livingdevops@gmail.com ['abubaker.dev417@gmail.com', 'shivamshekhar960@gmail.com', 'aditiyamishranit@gmail.com'] https://sqs.ap-south-1.amazonaws.com/879381241087/clamav-notify
 
@@ -21,7 +16,7 @@ to_email = os.getenv("TO_EMAIL").split(",")
 def main(Queue_url):
     bucket, key, s3_path, receipt_handle = helper.read_sqs_queue(Queue_url)
 
-    helper.download_file_from_landing_s3(bucket, key, f"{locals_path}{key}")
+    helper.download_file_from_landing_s3(bucket, key, f"{locals_path}/{key}")
 
     scan_result = helper.scan_file_with_antivirus(f"{locals_path}/{key}")
     if scan_result == "Clean":

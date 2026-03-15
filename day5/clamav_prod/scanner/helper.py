@@ -19,28 +19,6 @@ logging.basicConfig(
 )
 
 # Configure AWS credentials from environment variables
-aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
-aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
-
-# Reinitialize AWS clients with explicit credentials
-sqs = boto3.client(
-    "sqs",
-    region_name=aws_region,
-    aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key,
-)
-s3 = boto3.client(
-    "s3",
-    region_name=aws_region,
-    aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key,
-)
-ses = boto3.client(
-    "ses",
-    region_name=aws_region,
-    aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key,
-)
 
 
 
